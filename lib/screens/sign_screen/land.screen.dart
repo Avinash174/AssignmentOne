@@ -36,8 +36,6 @@ class _LandingScreenState extends State<LandingScreen> {
     return await FirebaseAuth.instance.signInWithCredential(credential);
   }
 
- 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,11 +76,14 @@ class _LandingScreenState extends State<LandingScreen> {
                     const SizedBox(
                       width: 20,
                     ),
-                    const Text('SIGN IN WITH GOOGLE',
-                        style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white)),
+                    const Text(
+                      'SIGN IN WITH GOOGLE',
+                      style: TextStyle(
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                    
                   ],
                 ),
               ),
